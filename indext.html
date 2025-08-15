@@ -3,64 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8fd1390140.js" crossorigin="anonymous"></script>
-
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="logo">Miguel <span>Simbaqueba</span></div>
-            <ul class="navlinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Body de la página-->
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                   <h1>Miguel Simbaqueba</h1>
-                   <h2>Full-stack Jr  Java developer</h2>
-                   <p>Apasionado por la tecnolgoía y el conocimiento, siempre
-                    estoy aprendiendo algo nuevo
-                   </p> 
-                   <div class="social-links">
-                        <a href="red social" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="red social" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="red social" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="red social" target="_blank"><i class="fab fa-x"></i></a>
-                   </div>
-                   <div class="hero-image">
-                        <img src="foto 3x4 (1).jpg" alt="foto_de_perfil">
-                   </div>
+
+    <!--Portada-hero-->
+    <section class="section-portada" id="section-portada">
+    <div class="container pt-5">
+        <p class="text-success text-center fw-bold fs-3">Hola</p>
+        <h1 class="titulo text-center display-3 fw-bold ">Soy <span class="nombre text-success">Miguel Ángel</span><br>
+        Full-stack Developer</h1>
+        <!--Imagen y botones de hero-->
+        <div class="text-center position-relative ">
+        <!--Frase destacada-->
+        <!--Botones-->
+            <div class="position-absolute bottom-0 start-50 translate-middle">
+                <a href="#section-proyectos" class="btn btn-success fw-semibold d-flex gap-2">Proyectos<i class="bi bi-folder"></i></a>
+            </div>
+                <img src="assets/img/foto_3x4__1_-removebg-preview.png" 
+                alt="foto Miguel" class="img-fluid img-perfil">
+        </div>
+    </div>
+    </section>
+    <!--Banner info-->
+    <section>
+      <div class="section-info" id="section-info">
+         <div class="container">
+            <div class="row bg-dark rounded-4 p-4 row-gap-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-bg-success rounded-4 p-3 text-center h-100">
+                    <h3 class="display-3 fw-bold">+4</h3>
+                    <p>Proyectos realizados en diseño web
+                     responsive, frontend dinámico y SPA
+                    </p>
                 </div>
-            </div>   
-        </section>
-    <!--sección de experiencia-->
-        <section id="experiencia" class="experiencia">
-            <h2 class="section-title">Experiencia Laboral</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="date">2024-2025</span>
-                        <h3>Desarrollador practicante</h3>
-                        <h4>Red de empleo con apoyo</h4>
-                        <p>Soluciones administrativas usando html,css y JS</p>
-                        <ul class="skills">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Vite</li>
-                            <li>JavaScript</li>
-                        </ul>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg">
+                <div class="text-bg-light rounded-4 p-3 text-center h-100">
+                    <h3 class="display-3 fw-bold">1</h3>
+                    <p>Año de experiencia en diseño y desarrollo
+                        de apps web
+                    </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg">
+                <div class="text-bg-light rounded-4 p-3 text-center h-100">
+                    <h3 class="display-3 fw-bold">3</h3>
+                    <p>Títulos y diplomados en inglés, Análisis y desarrollo
+                        de software y ciberseguridad
+                    </p>
+                </div>
+             </div>
+
+              <div class="col-12 col-md-6 col-lg">
+                <div class="text-bg-light rounded-4 p-3 text-center h-100">
+                    <h3 class="display-3 fw-bold">2</h3>
+                    <p>Reconocimientos en softskills 
+                        y desempeño académico
+                    </p>
+                </div>
+              </div>
+         </div>
+      </div>
+    </section>
+    <!--Servicios-->
+    <section class="section-services" id="section-services">
+        <div class="container pt-5 fs-1">
+            <div class="row">
+                <h3 class="text-center fw-bold fs-1 mb-3">Soluciones Digitales</h3>
+                <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center">
+                    <img src="/assets/img/servicios.jpeg" alt="imagen de referencia" class="img-fluid p-3">
+                </div>
+                <div class="col-12 col-xl-6 vstack gap-3">
+                    <article class="text-center border border-success rounded-4 px-4 py-3 mt-4">
+                        <i class="bi bi-search text-success fs-1"></i>
+                        <h4 class="fw-bold text-success">Solution Research</h4>
+                        <p class="text-secondary fs-3">Busqueda de soluciones personalizadas identificando
+                            necesidades y mejorando la experiencia
+                        </p>
+                    </article>
+
+                    <article class=" text-bg-secondary text-center border border-secondary rounded-4 px-4 py-3">
+                        <i class="bi bi-bezier  fs-1"></i>
+                        <h4 class="fw-bold ">UX/UI Design</h4>
+                        <p class="fs-3">Diseño de interfaces visuales centradas en
+                            el usuario, combinando estética, funcionalidad y accesibilidad
+                        </p>
+                    </article>
+
+                        <article class="text-center border border-success rounded-4 px-4 py-3">
+                        <i class="bi bi-search text-success fs-1"></i>
+                        <h4 class="fw-bold text-success">Backend and Databases</h4>
+                        <p class="text-secondary fs-3">integracion de servicios backend y bases de datos
+                            construcción segura, eficiente y robusta
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!---Proyectos-->
+    <section class="section proyectos">
+        <div class="container py-5 " id="section-proyectos">
+            <div class="row justify-content-center">
+                <h3 class="text-center fw-bold display-4 mb-5 mt-5">Proyectos</h3>
+                <div class="col-12 col-xl-10">
+                    <!--fila uno-->
+                    <div class="row border p-3 rounded-4 mb-3">
+                        <div class="col-12 col-lg-6 d-flex align-items-center">
+                           <div class="py-3">
+                            <span class="bg-success-subtle rounded-pill px-3 py-1">Web design</span>
+                            <h3 class="text-success fs-2 fw-bold mt-3">App web interacción Pokémon</h3>
+                            <p class="text-secondary fw-semibold">Diseño y desarrollo de un sitio web que usa API pública de pokémon
+                            para buscar. encontrar y agregar a favortitos a tus pokemones preferidos
+                            </p>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/Ukpercival/Lab-Pokemon.git" class="btn btn-secondary" target="_blank">
+                                    Repositorio</a>
+                                <a href="" class="btn btn-success btn-demo">Probar demo</a>
+                            </div>
+                            
+                           </div> 
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/assets/img/pokedex.webp" alt="proyecto pokémon" class="img-fluid
+                            rounded">
+                        </div>
+                    </div>
+                     <!--fila 2-->
+                    <div class="row border p-3 rounded-4 mb-3">
+                        <div class="col-12 col-lg-6 d-flex align-items-center">
+                           <div class="py-3">
+                            <span class="bg-warning-subtle rounded-pill px-3 py-1">SPA</span>
+                            <h3 class="titulo-spa fs-2 fw-bold mt-3">Single Page Aplication "Sportify"</h3>
+                            <p class="text-secondary fw-semibold">Diseño y desarrollo de un SPA tipo e-commerce
+                                 usando html,css y bootstrap diseño responsivo,estilizado y almacenamiento local de datos
+                            </p>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/Crowtinho/hackathon.git" class="btn btn-secondary" target="_blank">
+                                    Repositorio</a>
+                                <a href="" class="btn  btn-demo-2">Probar demo</a>
+                            </div>
+                            
+                           </div> 
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/assets/img/logo.png" alt="proyecto pokémon" class="img-fluid
+                            rounded">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <!--Referencias-->
+    <section class="section-references" id="section-testimonios">
+        <div class="container">
+            <h3 class="text-center mb-4 display-4 "> Tecnologías</h3>
+            <div id="carouselExample" class="carousel slide carousel-dark">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <article class="bg-light rounded-4 border text-center p-3">
+                                <img src="/assets/img/jsLogo.webp"  alt="JavaScript" >
+                                <h5 class="mb-2 mt-3 fw-bold">JavaScript</h5>
+
+                                <ul class="d-flex justify-content-center unlisted list-unstyled">
+                                    <li>
+                                        <div class="btn">nivel:</div>
+                                    </li>
+                                    <li>
+                                        <div class="btn bg-warning-subtle">Intermedio</div>
+                                    </li>
+                                </ul>
+                                <p class="text-secondary fw-semibold">Diseño y desarrollo web</p>
+                                <p>Uso de JavaScript para dar dinamismo e interacción a páginas y sitios web.<br>
+                                    Garantizando buenas prácticas, agilidad y eficiencia
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+
+                  <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <article class="bg-light rounded-4 border text-center p-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/assets/img/htmllogo.webp"  alt="HTML y CSS" >
+                                    <img src="/assets/img/csslogo.webp"  alt="HTML y CSS" >
+                                </div>
+                                <h5 class="mb-2 mt-3 fw-bold">HTML Y CSS</h5>
+
+                                <ul class="d-flex justify-content-center unlisted list-unstyled">
+                                    <li>
+                                        <div class="btn">nivel:</div>
+                                    </li>
+                                    <li>
+                                        <div class="btn bg-warning-subtle">Intermedio</div>
+                                    </li>
+                                </ul>
+                                <p class="text-secondary fw-semibold">Estructura y diseño web</p>
+                                <p>Uso de tecnologías web básicas para estructuración y diseñado Web.<br>
+                                    Uso de buenas prácticas para acessibilidad y legibilidad
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <article class="bg-light rounded-4 border text-center p-3">
+
+                                <img src="/assets/img/nodejs.png"  alt="Node.js" class="node-img" >
+
+                                <h5 class="mb-2 mt-3 fw-bold">Node.js</h5>
+
+                                <ul class="d-flex justify-content-center unlisted list-unstyled">
+                                    <li>
+                                        <div class="btn">nivel:</div>
+                                    </li>
+                                    <li>
+                                        <div class="btn bg-success-subtle">Básico</div>
+                                    </li>
+                                </ul>
+                                <p class="text-secondary fw-semibold">Backend</p>
+                                <p>Uso básico de Node.js para poder desarrollar estructura backend
+                                    con agilidad y eficiencia.<br> con la capacidad de conectar bases de datos
+                                    no relacionales externas.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <article class="bg-light rounded-4 border text-center p-3">
+
+                                <img src="/assets/img/mysqllogo.webp"  alt="MySQL">
+
+                                <h5 class="mb-2 mt-3 fw-bold">MySQL</h5>
+
+                                <ul class="d-flex justify-content-center unlisted list-unstyled">
+                                    <li>
+                                        <div class="btn">nivel:</div>
+                                    </li>
+                                    <li>
+                                        <div class="btn bg-warning-subtle">Intermedio</div>
+                                    </li>
+                                </ul>
+                                <p class="text-secondary fw-semibold">Bases de datos</p>
+                                <p>Uso de bases de datos relacionales, garantizando agilidad.<br>
+                                    Tengo conocimiento en sentencias DDL Y DML
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <article class="bg-light rounded-4 border text-center p-3">
+
+                                <img src="/assets/img/mongoDBlogo.png"  alt="MongoDB">
+
+                                <h5 class="mb-2 mt-3 fw-bold">MongoDB</h5>
+
+                                <ul class="d-flex justify-content-center unlisted list-unstyled">
+                                    <li>
+                                        <div class="btn">nivel:</div>
+                                    </li>
+                                    <li>
+                                        <div class="btn bg-success-subtle">Básico</div>
+                                    </li>
+                                </ul>
+                                <p class="text-secondary fw-semibold">Bases de datos</p>
+                                <p>Experiencia básica en MongoDB: <br>
+                                    creación de colecciones, consultas y operaciones CRUD simples.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="text-bg-dark">
+        <div class="container text-center py-5">
+            <img src="/assets/img/raccoon.png" alt="Logo Miguel" class="w-20 h-auto">
+            <p>Miguel Ángel Simbaqueba</p>
+            <p>Full-stack Developer</p>
+            <p>"Aprende para luego Enseñar"</p>
+            <ul class="list-unstyled d-flex justify-content-center gap-4">
+                <li>
+                    <a href="https://www.linkedin.com/in/miguel-angel-simbaqueba-developer/" 
+                    target="_blank">
+                    <i class="bi bi-linkedin fs-3"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Ukpercival" 
+                    target="_blank">
+                    <i class="bi bi-github fs-3"></i></a>
+                </li>
+            </ul>
+        <p>© Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
