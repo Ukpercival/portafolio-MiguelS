@@ -3,6 +3,16 @@
     font-weight: 400;
     font-style: normal;
 }
+.nombre{
+    font-family: 'Press Start 2P', system-ui !important;
+    font-weight: 400;
+    font-style: normal;
+}
+#hola{
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .section-portada{
  background: linear-gradient(to bottom right,
@@ -23,7 +33,7 @@
 }
 
 p{
-    font-family: 'Poppins', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif !important;
+    font-family: 'Poppins', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif ;
 }
 
 h3{
@@ -51,6 +61,19 @@ color: green
     outline: auto;
     color: rgb(200, 133, 7);
 }
+.titulo-cafetalera{
+    color: rgb(2, 110, 205);
+}
+
+.btn-demo-3{
+    background-color: rgb(14, 151, 230);
+}
+
+.btn-demo-3:hover{
+    outline: auto;
+    color: rgb(6, 87, 227);
+}
+
 
 .carousel-item img {
   width: 100px !important;  
