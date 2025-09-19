@@ -1,5 +1,5 @@
 .titulo{
-    font-family: 'Press Start 2P', system-ui;
+    
     font-weight: 400;
     font-style: normal;
 }
@@ -9,10 +9,45 @@
     font-style: normal;
 }
 #hola{
-    font-family: 'Press Start 2P', system-ui;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+    color: rgb(10, 198, 10);
+
 }
+.titulo-animado { display: flex; 
+    justify-content: center; /* centrado horizontal */ 
+    margin-top: 30px; /* distancia desde arriba */ margin-bottom: 25px;
+    text-align: center; 
+    font-family: 'Press Start 2P', cursive; /* misma fuente estilo retro */ } 
+
+.text-changer { 
+    display: flex; 
+    align-items: center; gap: 18px; /* más aire entre spans */ 
+    font-size: 52px; /* tamaño grande como la referencia */ 
+    font-weight: bold; 
+    line-height: 1.4; 
+} 
+
+.intro-text {
+    color: #7c7c7c;
+    white-space: nowrap;
+ } 
+.roles-container {
+     overflow: hidden; 
+     height: 1.4em; /* altura proporcional al tamaño */ 
+} 
+
+.role { display: block; 
+    color: rgb(10, 198, 10); 
+    line-height: 1.4em; /* corrige cortes de letras largas */ 
+    padding: 6px 0; /* más espacio vertical */ 
+    animation: role-change 8s infinite; } 
+    @keyframes role-change { 
+        0%, 15% { transform: translateY(0); } 
+        25%, 40% { transform: translateY(-100%); } 
+        50%, 65% { transform: translateY(-200%); } 
+        75%, 90% { transform: translateY(-300%); } 
+        100% { transform: translateY(0); } }
 
 .section-portada{
  background: linear-gradient(to bottom right,
@@ -24,7 +59,7 @@
 }
 
 .btn{
-    font-family: 'Press Start 2P', system-ui;
+     font-family: 'Poppins', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif ;
       font-style: normal;
 }
 
@@ -37,7 +72,7 @@ p{
 }
 
 h3{
-    font-family: 'Press Start 2P', system-ui;
+     font-family: 'Poppins', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif ;
     font-weight: 400;
     font-style: normal;
 }
