@@ -35,7 +35,7 @@
         <!--Frase destacada-->
         <!--Botones-->
             <div class="position-absolute bottom-0 start-50 translate-middle">
-                <a href="#section-proyectos" class="btn btn-success fw-semibold d-flex gap-2">Proyectos<i class="bi bi-folder"></i></a>
+                <a href="#section-proyectos" class="btn fw-semibold d-flex gap-2 text-light" id="botonProyectos">Proyectos<i class="bi bi-folder text-light"></i></a>
             </div>
                 <img src="assets/img/foto_3x4__1_-removebg-preview.png" 
                 alt="foto Miguel" class="img-fluid img-perfil">
@@ -47,16 +47,16 @@
       <div class="section-info" id="section-info">
          <div class="container">
             <div class="row bg-dark rounded-4 p-4 row-gap-3">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="text-bg-success rounded-4 p-3 text-center h-100">
-                    <h3 class="display-3 fw-bold">+4</h3>
+              <div class="col-12 col-md-6 col-lg-4" id="numeroProyectos">
+                <div class="text rounded-4 p-3 text-center h-100" id="timeline">
+                    <h3 class="display-3 fw-bold text-light">+4</h3>
                     <p>Proyectos con UX/UI, frontend y backend,
                         bases de datos, despliegue en nube
                     </p>
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg">
+              <div class="bannerInfo col-12 col-md-6 col-lg">
                 <div class="text-bg-light rounded-4 p-3 text-center h-100">
                     <h3 class="display-3 fw-bold">1</h3>
                     <p>Año de experiencia en diseño y desarrollo
@@ -65,7 +65,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg">
+              <div class=" bannerInfo col-12 col-md-6 col-lg">
                 <div class="text-bg-light rounded-4 p-3 text-center h-100">
                     <h3 class="display-3 fw-bold">3</h3>
                     <p>Títulos y diplomados en inglés, Análisis y desarrollo
@@ -74,7 +74,7 @@
                 </div>
              </div>
 
-              <div class="col-12 col-md-6 col-lg">
+              <div class=" bannerInfo col-12 col-md-6 col-lg">
                 <div class="text-bg-light rounded-4 p-3 text-center h-100">
                     <h3 class="display-3 fw-bold">2</h3>
                     <p>Reconocimientos en softskills 
@@ -85,43 +85,160 @@
          </div>
       </div>
     </section>
-    <!--Servicios-->
-    <section class="section-services" id="section-services">
-        <div class="container pt-5 fs-1">
-            <div class="row">
-                <h3 class="text-center fw-bold fs-1 mb-3">Soluciones Digitales</h3>
-                <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center">
-                    <img src="/assets/img/servicios.jpeg" alt="imagen de referencia" class="img-fluid p-3">
+    <!--contacto y redes-->
+        <section class="section-contact py-5 mb-5" id="section-contact">
+        <div class="container py-4" id="seccion-contacto">
+            <div class="titulo text-center fs-1 fw-bold mb-5">
+                <span>Encuentrame en redes</span>
+            </div>
+            
+            <!-- Iconos de contacto en fila -->
+            <div class="row justify-content-center py-3">
+                <div class="col-auto mx-3">
+                    <a href="https://github.com/Ukpercival" target="_blank" 
+                    class="d-flex align-items-center justify-content-center text-decoration-none contact-icon-compact">
+                        <i class="bi bi-github"></i>
+                    </a>
                 </div>
-                <div class="col-12 col-xl-6 vstack gap-3">
-                    <article class="text-center border border-success rounded-4 px-4 py-3 mt-4">
-                        <i class="bi bi-search text-success fs-1"></i>
-                        <h4 class="fw-bold text-success">Solution Research</h4>
-                        <p class="text-secondary fs-3">Busqueda de soluciones personalizadas identificando
-                            necesidades y mejorando la experiencia
-                        </p>
-                    </article>
+                <div class="col-auto mx-3">
+                    <a href="https://www.linkedin.com/in/miguel-angel-simbaqueba-developer/" target="_blank" 
+                    class="d-flex align-items-center justify-content-center text-decoration-none contact-icon-compact">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <div class="col-auto mx-3">
+                    <a href="mailto:miguel.simbaqueba@example.com" 
+                    class="d-flex align-items-center justify-content-center text-decoration-none contact-icon-compact">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <article class=" text-center border border-success rounded-4 px-4 py-3 mt-4">
-                        <i class="bi bi-bezier text-success  fs-1"></i>
-                        <h4 class="fw-bold text-success">UX/UI Design</h4>
-                        <p class=" text-secondary fs-3">Diseño de interfaces visuales centradas en
-                            el usuario, combinando estética, funcionalidad y accesibilidad
-                        </p>
-                    </article>
+    <!--Servicios-->
+   
+<!--Servicios Mejorados-->
+<section class="section-services py-5" id="section-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h3 class="fw-bold display-4 mb-3">Soluciones Digitales</h3>
+                <p class="lead text-muted">Transformo ideas en experiencias digitales completas</p>
+            </div>
+        </div>
 
-                        <article class="text-center border border-success rounded-4 px-4 py-3">
-                        <i class="bi bi-search text-success fs-1"></i>
-                        <h4 class="fw-bold text-success">Backend and Databases</h4>
-                        <p class="text-secondary fs-3">integracion de servicios backend y bases de datos
-                            construcción segura, eficiente y robusta
+        <div class="row g-4">
+            <!-- Solution Research -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card h-100 position-relative overflow-hidden">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <i class="bi bi-search service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">Solution Research</h4>
+                        <p class="service-description">
+                            Análisis profundo de necesidades del usuario y mercado para crear 
+                            soluciones digitales que realmente impacten y resuelvan problemas reales.
                         </p>
-                    </article>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- UX/UI Design -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card h-100 position-relative overflow-hidden">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <i class="bi bi-bezier service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">UX/UI Design</h4>
+                        <p class="service-description">
+                            Diseño de interfaces intuitivas y atractivas que combinan 
+                            estética moderna con funcionalidad óptima y accesibilidad universal.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend & Databases -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card h-100 position-relative overflow-hidden">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <i class="bi bi-server service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">Backend & Databases</h4>
+                        <p class="service-description">
+                            Desarrollo de arquitecturas robustas y escalables con APIs REST, 
+                            bases de datos optimizadas y seguridad implementada desde el núcleo.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-    </section>
+        <!-- Proceso de trabajo como Timeline -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="timeline-container">
+                    <h4 class="text-center mb-5 fw-bold">Mi Proceso de Trabajo</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Descubrimiento</h5>
+                                <p>Análisis profundo de necesidades, objetivos del negocio y investigación de usuarios para definir el alcance del proyecto.</p>
+                                <span class="timeline-duration">1-2 semanas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Diseño UX/UI</h5>
+                                <p>Creación de wireframes, prototipos interactivos y diseño visual centrado en la experiencia del usuario.</p>
+                                <span class="timeline-duration">2-3 semanas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Desarrollo</h5>
+                                <p>Implementación del frontend responsivo, desarrollo de APIs backend y integración de bases de datos.</p>
+                                <span class="timeline-duration">4-6 semanas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="bi bi-rocket"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Testing & Deploy</h5>
+                                <p>Pruebas exhaustivas, optimización de rendimiento y despliegue en producción con documentación completa.</p>
+                                <span class="timeline-duration">1-2 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!---Proyectos-->
     <section class="section proyectos">
         <div class="container py-5 " id="section-proyectos">
